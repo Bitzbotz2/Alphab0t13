@@ -204,7 +204,7 @@ autoketik = false
 autoregister = setting.user_register
 typemenu = 'document'
 img = setting.img
-apiku = 'https://api.whatsapp.com/send?phone=6283191486089'
+apiku = 'https://github.com/Bitzbotz2'
 gc_wa_lu = 'https://chat.whatsapp.com/DreLo3c6lIDA1dI4dfq0J1' //klo gk punya gc wa gk usah di ganti 👍
 targetpc = setting.ownerNumberr
 owner = targetpc
@@ -2278,7 +2278,7 @@ let papakpo = [{
 }
 break
 	case 'verify': case 'daftar':
- if (isRegister) return reply('Kamu sudah terdaftar di dalam database')
+ if (isRegister) return reply('Kamu sudah terdaftar di dalam database❤🍭')
  addRegisterUser(sender, pushname, bio_user, wib)
  let ran_blc = randomNomor(50)
  addBalance(sender, ran_blc, balance)
@@ -2611,7 +2611,7 @@ case 'setname':
 					if (!isGroupAdmins) return reply(lang.onlygcAdmin())
 					if (!isBotGroupAdmins) return reply(lang.botNotAdm())
 					alpha.groupUpdateSubject(from, `${body.slice(9)}`)
-					alpha.sendMessage(from, '「  SUKSES  」Mengubah Nama Grup', text, { quoted: fdoc })
+					alpha.sendMessage(from, '「  SUKSES KAK❤🍭 」Mengubah Nama Grup', text, { quoted: fdoc })
 					await limitAdd(sender, limit)
 					break 
 case 'setdesc':
@@ -2619,7 +2619,7 @@ case 'setdesc':
 					if (!isGroupAdmins) return reply(lang.onlygcAdmin())
 					if (!isBotGroupAdmins) return reply(lang.botNotAdm())
 					alpha.groupUpdateDescription(from, `${body.slice(9)}`)
-					alpha.sendMessage(from, '*「  SUKSES  」Mengubah Desk Grup', text, { quoted: fdoc })
+					alpha.sendMessage(from, '*「  SUKSES KAK❤🍭 」Mengubah Desk Grup', text, { quoted: fdoc })
 					await limitAdd(sender, limit)
 					break   
 case 'spam':
@@ -2724,14 +2724,14 @@ case 'bcgif':
 					const vname = alpha.contacts[i] != undefined ? alpha.contacts[i].vname || alpha.contacts[i].notify : undefined
 					ini_list.push({
 					"displayName": 'Owner Alphabot',
-					"vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:${vname ? `${vname}` : `${alpha.user.name}`}\nORG: SUBSCRIBE ZEEONE OFC;\nitem1.TEL;waid=${i.split('@')[0]}:${i.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`
+					"vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:${vname ? `${vname}` : `${alpha.user.name}`}\nORG: JANGAN LUPA DONASI KAK Lisabotz❤🍭;\nitem1.TEL;waid=${i.split('@')[0]}:${i.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`
 					})
 					}
 					hehe = await alpha.sendMessage(from, {
 					"displayName": `${ini_list.length} kontak`,
 					"contacts": ini_list 
 					}, 'contactsArrayMessage', { quoted: fkontak})
-					var ini_gopayy =`Halo @${sender.split("@")[0]} itu owner ku, jangan lupa donasi kak😇`
+					var ini_gopayy =`Halo @${sender.split("@")[0]} itu owner ku, jangan di spam ya ntar kalo spam aku ewe loh.JANGAN lupa donasi kak❤🍭`
 var buttonss = [
 {buttonId: 'donasi', buttonText:{displayText: 'Donasi'}, type: 1},
 {buttonId: 'sewabot', buttonText:{displayText: 'Sewa'}, type: 1}
@@ -3331,7 +3331,7 @@ break
 							break
 				case 'donasi': case 'donate':
 							let donas = await getBuffer('https://telegra.ph/file/2203a91ba6216de345c3d.jpg')
-							sendButLocation(from, donasibot() , `Jangan klik doang, donasi ya 🌝 ${enter}${enter}${botname}™© | By ${ownername}`,donas,  [{"buttonId": `qr_gopay1`,"buttonText": {"displayText": "QR GOPAY"},"type": "RESPONSE"},{"buttonId": `qr_dana1`,"buttonText": {"displayText": "QR DANA"},"type": "RESPONSE"},{"buttonId": `qr_ovo1`,"buttonText": {"displayText": "QR OVO"},"type": "RESPONSE"}], {})
+							sendButLocation(from, donasibot() , `Jangan klik doang, donasi ya❤🍭 ${enter}${enter}${botname}™© | By ${ownername}`,donas,  [{"buttonId": `qr_gopay1`,"buttonText": {"displayText": "QR GOPAY"},"type": "RESPONSE"},{"buttonId": `qr_dana1`,"buttonText": {"displayText": "QR DANA"},"type": "RESPONSE"},{"buttonId": `qr_ovo1`,"buttonText": {"displayText": "QR OVO"},"type": "RESPONSE"}], {})
 							break
 				case 'gcbot': case 'grupbot': case 'groupbot':
 							let gcbot = await getBuffer('https://telegra.ph/file/09d4f9b77a0745f35bdfa.jpg')
@@ -3544,7 +3544,7 @@ break
 					break	
 			case 'image':
 			if (isLimit(sender, isPremium, isCreator, isOwner, limitawal, limit)) return sendButMessage(from, lang.limit(prefix), `© ${ownername}`, [{buttonId: 'limit', buttonText: {displayText: `Check Limit`, },type: 1,}]);
-		            if (args.length < 1) return fakegroup('Masukan teks!')
+		            if (args.length < 1) return fakegroup('Masukan teks❤🍭!')
 		            const gimg = args.join('');
 		            res = await gis(gimg, google)
 		            function google(error, result){
@@ -5017,9 +5017,9 @@ try {
 		case 'afk':
 			if (!isGroup) return reply(lang.onlygc())
             if (isAfkOn) return 
-                Alasan = q ? q : 'Nothing'
+                reason = q ? q : 'Nothing'
                 off.addAfkUser(sender, Date.now(), reason, _off)
-               papa =  `*${pushname}* Sekarang sedang Afk\n*Alasan :* ${reason}\n`
+               papa =  `*${pushname}* Sekarang sedang Afk\n*reason :* ${reason}\n`
                 alpha.sendMessage(from,papa, text,{quoted : mek})
             break
         case 'autoread':
