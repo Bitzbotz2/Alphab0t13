@@ -179,7 +179,7 @@ fthumb = setting.fakethumb
 hit_today = []
 blocked = []
 ban = []
-limitawal = "50"
+limitawal = "10"
 gcounttprem = "50" 
 gcounttuser = "25" 
 
@@ -204,7 +204,7 @@ autoketik = false
 autoregister = setting.user_register
 typemenu = 'document'
 img = setting.img
-apiku = 'https://github.com/Bitzbotz2'
+apiku = 'https://github.com/Lisabotz❤🍭'
 gc_wa_lu = 'https://chat.whatsapp.com/DreLo3c6lIDA1dI4dfq0J1' //klo gk punya gc wa gk usah di ganti 👍
 targetpc = setting.ownerNumberr
 owner = targetpc
