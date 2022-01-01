@@ -2436,7 +2436,7 @@ break
 											},
 										"type": "RESPONSE"
 										}]
-								sendButLocation(from, allmenu(kyun, os, prefix, wita, wit, ucapannya2, timuu, status, wa_version, mcc, mnc, 12, iphone 13 promax, 13 promax, alfa , alfa1, thisDay, ini_tanggal, totalchat, hit_today, ini_gcchat, latensii), `NOTE ！\njangan spam om ntar aku ewe ahhh yamete❤🍭💦\n\n${botname}™© | By ${ownername}`,pp_userz, papao, {})
+								sendButLocation(from, allmenu(kyun, os, prefix, wita, wit, ucapannya2, timuu, status, wa_version, mcc, mnc, os_version, device_manufacturer, device_model, alfa , alfa1, thisDay, ini_tanggal, totalchat, hit_today, ini_gcchat, latensii), `NOTE ！\njangan spam om ntar aku ewe ahhh yamete❤🍭💦\n\n${botname}™© | By ${ownername}`,pp_userz, papao, {})
                 break
         case 'trigger':
 					reply ('Mungkin yg kamu maksud .triggered')
