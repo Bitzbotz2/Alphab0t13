@@ -4740,7 +4740,7 @@ case 'listrespon':
 			//    if(!mek.key.fromMe && !isOwner && !isCreator) return reply(lang.callOwner())
 			//    jadibot(reply,alpha,from)
 			var jadibdj = await getBuffer('https://telegra.ph/file/18be96b6415ea8833dbe5.jpg')
-							sendButLocation(from, jadibut() , Donasi kak biar bot on 24 jam❤🍭 〽️ ${enter}${enter}${botname}™© | By ${ownername}`,jadibdj,  [{"buttonId": `payment`,"buttonText": {"displayText": "PAYMENT"},"type": "RESPONSE"}], {})
+							sendButLocation(from, jadibut() , Jangan klik doang 〽️ ${enter}${enter}${botname}™© | By ${ownername}`,jadibdj,  [{"buttonId": `payment`,"buttonText": {"displayText": "PAYMENT"},"type": "RESPONSE"}], {})
 							await limitAdd(sender, limit)
 					break   
 		case 'stopjadibot':
