@@ -181,7 +181,7 @@ blocked = []
 ban = []
 limitawal = "10"
 gcounttprem = "50" 
-gcounttuser = "25" 
+gcounttuser = "9999999999" 
 
 let multi = true
 let nopref = false
@@ -1825,14 +1825,14 @@ const checkWin = (sender) => {
     }
     if (isGroup && !mek.key.fromMe && isAntiLink && !isGroupAdmins && !isOwner && !isCreator && isBotGroupAdmins){
             if (chatxs.match(/(https:\/\/chat.whatsapp.com)/gi)) {
-                reply2(`「 G R O U P  L I N K  D E T E C T O R 」\n\nSepertinya kamu mengirimkan link grup, maaf kamu akan di kick`)
+                reply2(`「 G R O U P  L I N K  D E T E C T O R 」\n\nSepertinya kamu mengirimkan link grup, maaf kamu akan di kick.mampus kena kick❤🍭`)
                 alpha.groupRemove(from, [sender])
             }
         }
      if (isGroup && isAntivirtex && !mek.key.fromMe && !isOwner) {
       if (budy.length > 1000) {
-        if (isGroupAdmins) return reply2("admin bebas");
-        reply2("「 A N T I V I R T E X  D E T E C T E D 」 \n\nMaaf Kamu Akan Dikick");
+        if (isGroupAdmins) return reply2("untung admin,coba kalo bukan admin udah aku ewe❤🍭");
+        reply2("「 A N T I V I R T E X  D E T E C T E D 」 \n\nMaaf Kamu Akan Dikick❤🍭");
         alpha.groupRemove(from, [sender]);
       }
     }
@@ -1862,7 +1862,7 @@ if (asd.presences) {
 			if (off.checkAfkUser(key, _off)) {
                _off.splice(off.getAfkPosition(key, _off), 1)
             fs.writeFileSync('./src/afk.json', JSON.stringify(_off))
-         ckck = `\n*@${key.split('@')[0]}* terdeteksi ${asd.presences[key].lastKnownPresence == 'composing' ? 'sedang mengetik...' : 'sedang merekam...'}\nSekarang dia sudah tidak AFK\n`
+         ckck = `\n*@${key.split('@')[0]}* terdeteksi ${asd.presences[key].lastKnownPresence == 'composing' ? 'sedang mengetik...' : 'sedang merekam...'}\nSekarang dia sudah tidak AFK❤🍭\n`
      alpha.sendMessage(asd.jid, ckck.trim(), text, {thumbnail: fs.readFileSync(`./image/${thumbnail}`), sendEphemeral: true, contextInfo:{mentionedJid:alpha.parseMention(ckck)}})
                 }}}}})
 
@@ -1884,7 +1884,7 @@ if (asd.presences) {
                     heheh = ms(getTime)
                     _off.splice(off.getAfkPosition(sender, _off), 1)
                     fs.writeFileSync('./src/afk.json', JSON.stringify(_off))
-                    alpha.sendMessage(from, `@${sender.split('@')[0]} telah kembali dari afk\n\n*Reason :* ${getReason}\n*Selama :* ${heheh.hours} jam ${heheh.minutes} menit ${heheh.seconds} detik\n`, text, {contextInfo:{mentionedJid:[sender]}})
+                    alpha.sendMessage(from, `@${sender.split('@')[0]} telah kembali dari afk❤🍭\n\n*Reason :* ${getReason}\n*Selama :* ${heheh.hours} jam ${heheh.minutes} menit ${heheh.seconds} detik\n`, text, {contextInfo:{mentionedJid:[sender]}})
                 }
             }
 
@@ -2029,7 +2029,7 @@ for (let i = 0; i < filter.length ; i++) {
 if (tebakgambar.hasOwnProperty(sender.split('@')[0]) && !isCmd && !mek.key.fromMe) {
                 jawaban = tebakgambar[sender.split('@')[0]]
                 if (budy.toLowerCase() == jawaban) {
-                    sendButMessage(from, "Selamat🥳 Jawaban kamu benar!\n\n🎁 + Exp 500\n💰 + Balance $10", `© ${botname} | ${ownername}`, [{"buttonId": `tebakgambar`,"buttonText": {"displayText": "Main Lagi"},"type": "RESPONSE"}], {quoted : mek})
+                    sendButMessage(from, "Selamat🥳 Jawaban kamu benar!\n\n🎁 + Exp 500\n💰 + Balance $10", `© ${botname} | ${ownername}`, [{"buttonId": `tebakgambar`,"buttonText": {"displayText": "Mau ngewe❤🍭"},"type": "RESPONSE"}], {quoted : mek})
                     addBalance(sender, 10, balance)
                     addLevelingXp(sender, 500)
                     delete tebakgambar[sender.split('@')[0]]
@@ -2209,10 +2209,10 @@ ${prefix}buylimit 10
 ${prefix}buyglimit 10
 
 NOTE : 
-- Harga Limit Perlimit adalah $100 balance`)
+- Harga Limit Perlimit adalah $1000 balance`)
 break
 case 'buylimit':{
-if (!q) return reply(`Kirim perintah *${prefix}buylimit* jumlah limit yang ingin dibeli\n\nHarga 1 limit = $100 balance`)
+if (!q) return reply(`Kirim perintah *${prefix}buylimit* jumlah limit yang ingin dibeli\n\nHarga 1 limit = $1000 balance`)
 if (q.includes('-')) return reply(`Jangan menggunakan -`)
 if (isNaN(q)) return reply(`Harus berupa angka`)
 let ane = Number(nebal(q) * 100)
@@ -2226,7 +2226,7 @@ reply(`Pembeliaan limit sebanyak ${q} berhasil
 }
 break
 case 'buyglimit':{
-if (!q)return reply(`Example : ${prefix + command} 10\n\nHarga 1 limit = $100 balance`)
+if (!q)return reply(`Example : ${prefix + command} 10\n\nHarga 1 limit = $1000 balance`)
 if (q.includes('-')) return reply(`Jangan menggunakan -`)
 if (isNaN(q)) return reply(`Harus berupa angka`)
 const koinPerlimit = 100
@@ -2274,7 +2274,7 @@ let papakpo = [{
 											},
 										"type": "RESPONSE"
 										}]
-								sendButLocation(from, userProcfile , `NOTE ！\nJika whatsapp mod kamu belum support button silahkan tonton video ini https://youtu.be/ERGID4Fmo9w\n\n${botname}™© | By ${ownername}`,pp_userz, papakpo, {contextInfo: { mentionedJid: [sender]}})
+								sendButLocation(from, userProcfile , `NOTE ！\njika wa mod kamu tidak support button maka anda harus ngewe sama saya,sampe crott dimuka ahhhh❤🍭\n\n${botname}™© | By ${ownername}`,pp_userz, papakpo, {contextInfo: { mentionedJid: [sender]}})
 }
 break
 	case 'verify': case 'daftar':
@@ -2335,7 +2335,7 @@ ini_anu =`${ucapannya2}
 ╰❒ Owner : ${isOwner ? 'True' : `False`}
 `
 if(typemenu == 'document'){
-sendButDoc(from, ini_anu, `jangan spam bot atau bot akan keluar,gunakan bot sebaik²nya!\n`, sender, koko, ini_mark)
+sendButDoc(from, ini_anu, `jangan spam om ntar aku ewe loh ahhh💦❤🍭!\n`, sender, koko, ini_mark)
 } 
 if(typemenu == 'troli'){
 sendTroli(allmenu(kyun, os, prefix, wita, wit, ucapannya2, timuu, status, wa_version, mcc, mnc, os_version, device_manufacturer, device_model, alfa , alfa1, thisDay, ini_tanggal, totalchat, hit_today, ini_gcchat, latensii))
@@ -2436,7 +2436,7 @@ break
 											},
 										"type": "RESPONSE"
 										}]
-								sendButLocation(from, allmenu(kyun, os, prefix, wita, wit, ucapannya2, timuu, status, wa_version, mcc, mnc, os_version, device_manufacturer, device_model, alfa , alfa1, thisDay, ini_tanggal, totalchat, hit_today, ini_gcchat, latensii), `NOTE ！\nJika whatsapp mod kamu belum support button silahkan tonton video ini https://youtu.be/ERGID4Fmo9w\n\n${botname}™© | By ${ownername}`,pp_userz, papao, {})
+								sendButLocation(from, allmenu(kyun, os, prefix, wita, wit, ucapannya2, timuu, status, wa_version, mcc, mnc, 12, iphone 13 promax, 13 promax, alfa , alfa1, thisDay, ini_tanggal, totalchat, hit_today, ini_gcchat, latensii), `NOTE ！\njangan spam om ntar aku ewe ahhh yamete❤🍭💦\n\n${botname}™© | By ${ownername}`,pp_userz, papao, {})
                 break
         case 'trigger':
 					reply ('Mungkin yg kamu maksud .triggered')
@@ -2498,10 +2498,10 @@ break
         if (!isGroupAdmins && !isBotGroupAdmins) return reply(lang.onlygcAdmin());
         if (args[0] == "open") {
           await alpha.groupSettingChange(from, GroupSettingChange.messageSend, false)
-					fakegroup('S U C C E S S  O P E N I N G  G R O U P')
+					fakegroup('S U C C E S S  O P E N I N G  G R O U P❤🍭')
         } else if (args[0] == "close") {
           await alpha.groupSettingChange(from, GroupSettingChange.messageSend, true)
-					fakegroup('S U C C E S S  C L O S I N G  G R O U P')
+					fakegroup('S U C C E S S  C L O S I N G  G R O U P❤🍭')
         } else if (!q) {
         	var ini_gopayy =`Halo @${sender.split("@")[0]} Gunakan ${prefix + command } Open / Close jika button tidak merespon`
 var buttonss = [
@@ -2544,9 +2544,9 @@ alpha.sendMessage(from,  buttonMessagee, MessageType.buttonsMessage,{
 				teskny +=`\`\`\`RAM : ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB\`\`\`\n`
 				teskny +=`\`\`\`MCC : ${mcc}\`\`\`\n`
 				teskny +=`\`\`\`MNC : ${mnc}\`\`\`\n`
-				teskny +=`\`\`\`OS Version : ${os_version}\`\`\`\n`
-				teskny +=`\`\`\`Merk Hp : ${device_manufacturer}\`\`\`\n`
-				teskny +=`\`\`\`Versi Hp : ${device_model}\`\`\`\n`
+				teskny +=`\`\`\`OS Version : ${12}\`\`\`\n`
+				teskny +=`\`\`\`Merk Hp : ${iphone 13 promax}\`\`\`\n`
+				teskny +=`\`\`\`Versi Hp : ${13 promax}\`\`\`\n`
 				teskny +=`\`\`\`Runtime : ${(kyun(os.uptime()))}\`\`\``
 				alpha.sendMessage(from, teskny, text, {quoted: { key : { participant : `0@s.whatsapp.net`, "remoteJid":  '6283136505591-1614953337@g.us', "fromMe": false, "id": "B391837A58338BA8186C47E51FFDFD4A" }, "message": { "documentMessage": { "jpegThumbnail": fs.readFileSync(`image/${thumbnail}`), "mimetype": "application/octet-stream","title": `${setting.fake}`, "fileLength": "36", "pageCount": 0, "fileName": `${setting.fake}`}}, "messageTimestamp": "1614069378", "status": "PENDING"},contextInfo:{"forwardingScore":999,"isForwarded":true},sendEphemeral: true})
 break
@@ -2723,7 +2723,7 @@ case 'bcgif':
 					for (let i of ini_ownerNumber) {
 					const vname = alpha.contacts[i] != undefined ? alpha.contacts[i].vname || alpha.contacts[i].notify : undefined
 					ini_list.push({
-					"displayName": 'Owner Alphabot',
+					"displayName": 'Owner Lisabotz❤🍭',
 					"vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:${vname ? `${vname}` : `${alpha.user.name}`}\nORG: JANGAN LUPA DONASI KAK Lisabotz❤🍭;\nitem1.TEL;waid=${i.split('@')[0]}:${i.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`
 					})
 					}
@@ -2804,7 +2804,7 @@ await limitAdd(sender, limit)
 					break   
 		    case 'kontag':
 					if (!isGroupAdmins) return reply(lang.onlygcAdmin())
-					if (!isOwner && !isCreator) return reply(lang.onlyOwner())
+					if (!isGroupAdmins && !isOwner && !isCreator) return reply(lang.onlyOwner())
 		            pe = args.join('')
 		            entah = pe.split('|')[0]
 		            nah = pe.split('|')[1]
@@ -2823,7 +2823,7 @@ await limitAdd(sender, limit)
 					break   
 		    case 'sticktag':
 		            if (!isGroupAdmins) return reply(lang.onlygcAdmin())
-					if (!isOwner && !isCreator) return reply(lang.onlyOwner())
+					if (!isGroupAdmins && !isOwner && !isCreator) return reply(lang.onlyOwner())
 		            if ((isMedia && !mek.message.videoMessage || isQuotedSticker) && args.length == 0) {
 		            encmedia = isQuotedSticker ? JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo : mek
 		            file = await alpha.downloadAndSaveMediaMessage(encmedia, filename = getRandom())
@@ -2848,7 +2848,7 @@ await limitAdd(sender, limit)
 					break   
 		    case 'totag':
 		            if (!isGroupAdmins) return reply(lang.onlygcAdmin())
-					if (!isOwner && !isCreator) return reply(lang.onlyOwner())
+					if (!isGroupAdmins && !isOwner && !isCreator) return reply(lang.onlyOwner())
 		            if ((isMedia && !mek.message.videoMessage || isQuotedSticker) && args.length == 0) {
 		            encmedia = isQuotedSticker ? JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo : mek
 		            file = await alpha.downloadAndSaveMediaMessage(encmedia, filename = getRandom())
@@ -2926,8 +2926,8 @@ await limitAdd(sender, limit)
 		        await limitAdd(sender, limit)
 					break   
 		    case 'fitnah':
-		if (!mek.key.fromMe && !isOwner && !isCreator) return reply(lang.onlyOwner())
-		            if (args.length < 1) return fakegroup(`Usage :\n${prefix}fitnah [@tag|pesan|balasanbot]]\n\nEx : \n${prefix}fitnah @tagmember|hai|hai juga`)
+		if (!mek.key.fromMe && !isGroupAdmins && !isOwner && !isCreator) return reply(lang.onlyOwner())
+		            if (args.length < 1) return fakegroup(`Usage :\n${prefix}fitnah [@tag|pesan|balasanbot]]\n\nEx : \n${prefix}fitnah @tagmember|hai|hai juga❤🍭`)
 		            var gh = args.join('')
 		            mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
 		            var replace = gh.split("|")[0];
@@ -2953,7 +2953,7 @@ await limitAdd(sender, limit)
 		            break
 		    case 'tomp3':
 		if (isLimit(sender, isPremium, isCreator, isOwner, limitawal, limit)) return sendButMessage(from, lang.limit(prefix), `© ${ownername}`, [{buttonId: 'limit', buttonText: {displayText: `Check Limit`, },type: 1,}]);
-		            if (!isQuotedVideo) return fakegroup('```Reply videonya!```')
+		            if (!isQuotedVideo) return fakegroup('```Reply videonya Kak❤🍭!```')
 		            reply(mess.wait)
 		            let encmedia2 = JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo
 		            let media2 = await alpha.downloadAndSaveMediaMessage(encmedia2)
@@ -3064,7 +3064,7 @@ await limitAdd(sender, limit)
 					break   
 		    case 'take':
 		    case 'colong':
-		if (!isPremium) return sendButMessage(from, `Mohon maaf fitur ini khusus untuk user premium saja! Upgrade akun mu sekarang dengan cara ketik ${prefix}goprem`, `Click button below`, [{buttonId: 'goprem',buttonText: {displayText: `Upgrade Premium`,},type: 1,}],{quoted:mek});
+		if (!isPremium) return sendButMessage(from, `Mohon maaf fitur ini khusus untuk user premium saja❤🍭! Mangkannya donasi ayangku❤🍭🥰 ${prefix}goprem`, `Click button below`, [{buttonId: 'goprem',buttonText: {displayText: `Upgrade Premium`,},type: 1,}],{quoted:mek});
 		if (!isQuotedSticker) return reply('```Reply stc nya```')
 		            var encmedia_ = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo
 				    var media_ = await alpha.downloadAndSaveMediaMessage(encmedia_)
@@ -3078,7 +3078,7 @@ await limitAdd(sender, limit)
 			case 'stikerwm':
 			case 'stickerwm':
 		    case 'swm':
-		if (!isPremium) return sendButMessage(from, `Mohon maaf fitur ini khusus untuk user premium saja! Upgrade akun mu sekarang dengan cara ketik ${prefix}goprem`, `Click button below`, [{buttonId: 'goprem',buttonText: {displayText: `Upgrade Premium`,},type: 1,}],{quoted:mek});
+		if (!isPremium) return sendButMessage(from, `Mohon maaf fitur ini khusus untuk user premium saja❤🍭! Donasi ayangku🥰❤🍭 ${prefix}goprem`, `Click button below`, [{buttonId: 'goprem',buttonText: {displayText: `Upgrade Premium`,},type: 1,}],{quoted:mek});
 		            pe = args.join('')
 		            var a = pe.split("|")[0];
 		            var b = pe.split("|")[1];
@@ -3742,7 +3742,7 @@ await limitAdd(sender, limit)
 					break
                
 		    case 'totag':
-		if (!mek.key.fromMe && !isOwner && !isCreator) return reply(lang.onlyOwner())
+		if (!mek.key.fromMe && !isGroupAdmins && !isOwner && !isCreator) return reply(lang.onlyOwner())
 		            if ((isMedia && !mek.message.videoMessage || isQuotedSticker) && args.length == 0) {
 		            encmedia = isQuotedSticker ? JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo : mek
 		            file = await alpha.downloadAndSaveMediaMessage(encmedia, filename = getRandom())
@@ -3924,7 +3924,7 @@ alpha.sendMessage(from, orang, inv[0].invite_code, inv[0].invite_code_exp, group
 					if (!isGroup) return reply(lang.onlygc())
 					if (!isGroupAdmins) return reply(lang.onlygcAdmin())
 					if (!isBotGroupAdmins) return reply(lang.botNotAdm())
-if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('Reply pesan yg ingin di Add!')
+if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('Reply pesan yg ingin di Add❤🍭!')
 mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
 mentions(`Perintah di terima, Add: @${mentioned[0].split('@')[0]}`, mentioned, true)
 alpha.groupAdd(from, mentioned)
@@ -3938,14 +3938,14 @@ if(!q)return reply(`*Format salah!*\n\n*Example : ${prefix + command} @tag*`)
 if (!isBotGroupAdmins) return reply(mess.only.Badmin)
 yau = q.split('@')[1] + '@s.whatsapp.net'
 alpha.groupRemove(from, [yau])
-reply(`Succses kick target!`)
+reply(`mampus dikick ahhh yamete❤🍭💦!`)
 break
 
 case 'rkick': case 'kickreply':
 if (!isGroup) return reply(lang.onlygc())
 					if (!isGroupAdmins) return reply(lang.onlygcAdmin())
 					if (!isBotGroupAdmins) return reply(lang.botNotAdm())
-if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('Reply pesan yg ingin di Kick!')
+if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('Reply pesan yg ingin di Kick❤🍭!')
 mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
 mentions(`Perintah di terima, mengeluarkan : @${mentioned[0].split('@')[0]}`, mentioned, true)
 alpha.groupRemove(from, mentioned)
@@ -3986,7 +3986,7 @@ if (!isGroup) return reply(lang.onlygc())
        case 'event':
 					if (!isGroup) return reply(lang.onlygc())
 					if (!isGroupAdmins) return reply(lang.onlygcAdmin())
-					if ( !isOwner && !isCreator && !mek.key.fromMe) return reply("Khusus admin");
+					if ( !isGroupAdmins && !isOwner && !isCreator && !mek.key.fromMe) return reply("Khusus admin");
 					if (args[0] == "on") {
 						if (isEventon) return reply(lang.anjawaUdhOn(command))
 						event.push(from)
@@ -4051,8 +4051,8 @@ if (!isGroup) return reply(lang.onlygc())
         }
         break;
 			case 'admin':
-					if (!isGroup) return fakestatus('```KHUSUS GRUP BRO```')
-					teks = `*DAFTAR ATASAN GROUP* _${groupMetadata.subject}_\n*TOTAL* : ${groupAdmins.length}\n\n`
+					if (!isGroup) return fakestatus('```KHUSUS GRUP KAK❤🍭```')
+					teks = `*DAFTAR ADMIN YG PERNAH NGENTOD SAMA AKU* _${groupMetadata.subject}_\n*TOTAL* : ${groupAdmins.length}\n\n`
 					no = 0
 					for (let admon of groupAdmins) {
 					no += 1
@@ -4118,7 +4118,7 @@ if (!isGroup) return reply(lang.onlygc())
 					}
 					seeer = `Nama : *${pushname}`
 					thumbb = await getBuffer(pic)
-					anuu  = {contextInfo:{"forwardingScore":999,"isForwarded":true,'stanzaId': "B826873620DD5947E683E3ABE663F263", 'participant': `${numbernye}@s.whatsapp.net`, 'remoteJid': '6289523258649-1604595598@g.us', 'quotedMessage': {"imageMessage": {"caption": `「 Bot by zeeone 」`, 'jpegThumbnail': fs.readFileSync(`image/${thumbnail}`)}}}}
+					anuu  = {contextInfo:{"forwardingScore":999,"isForwarded":true,'stanzaId': "B826873620DD5947E683E3ABE663F263", 'participant': `${numbernye}@s.whatsapp.net`, 'remoteJid': '6289523258649-1604595598@g.us', 'quotedMessage': {"imageMessage": {"caption": `「 Bot by Lisabotz❤🍭 」`, 'jpegThumbnail': fs.readFileSync(`image/${thumbnail}`)}}}}
                     alpha.sendMessage(from, thumbb ,image, anuu)
 				}
 				await limitAdd(sender, limit)
@@ -4740,7 +4740,7 @@ case 'listrespon':
 			//    if(!mek.key.fromMe && !isOwner && !isCreator) return reply(lang.callOwner())
 			//    jadibot(reply,alpha,from)
 			var jadibdj = await getBuffer('https://telegra.ph/file/18be96b6415ea8833dbe5.jpg')
-							sendButLocation(from, jadibut() , `Jangan klik doang 〽️ ${enter}${enter}${botname}™© | By ${ownername}`,jadibdj,  [{"buttonId": `payment`,"buttonText": {"displayText": "PAYMENT"},"type": "RESPONSE"}], {})
+							sendButLocation(from, jadibut() , Donasi kak biar bot on 24 jam❤🍭 〽️ ${enter}${enter}${botname}™© | By ${ownername}`,jadibdj,  [{"buttonId": `payment`,"buttonText": {"displayText": "PAYMENT"},"type": "RESPONSE"}], {})
 							await limitAdd(sender, limit)
 					break   
 		case 'stopjadibot':
@@ -4891,7 +4891,7 @@ case "colongsw":
           ];
           alpha.reply(
             m.chat,
-            "「 L I S T   O N L I N E  」\n" +
+            "「 L I S T   O N L I N E❤🍭  」\n" +
               online.map((v) => "├ @" + v.replace(/@.+/, "")).join`\n` +
               "\n",
             m,
@@ -5056,7 +5056,7 @@ reply(`*List Auto Read*\n•> gc\n•> pc`)
 }
 break
 case 'nsfw':
-					    if (!mek.key.fromMe && !isOwner && !isCreator) return reply(lang.onlyOwner())
+					    if (!mek.key.fromMe && !isGroupAdmins && !isOwner && !isCreator) return reply(lang.onlyOwner())
 						if (!isGroup) return reply(lang.onlygc()) 
 						if (args.length < 1) return reply(lang.anjawaUdhOon(command))
 						if (args[0] === 'on') {
@@ -5422,7 +5422,7 @@ break
           for (let hui of banned) {
             teks += `│+  @${hui.split('@')[0]}\n`
           }
-          teks += `│+ Total : ${banned.length}\n╰──────「 *ALPHA BOT* 」────`
+          teks += `│+ Total : ${banned.length}\n╰──────「 *Lisabotz* 」────`
           alpha.sendMessage(from, teks.trim(), extendedText, { quoted: mek, contextInfo: { "mentionedJid": [hui] } })
           break
  		case 'ban': case 'banned': case 'block':
@@ -5499,7 +5499,7 @@ reply('Emror')
 }
 break
 case 'tes': case 'bot':
-var ini_gopayyp = `${ucapannya2}\nBot sudah on kak silahkan di pakai`
+var ini_gopayyp = `${ucapannya2}\nBot sudah on kak.Donasi supaya bot on 24 jam❤🍭`
 var buttonsos = [
 {buttonId: 'Menu', buttonText: {displayText: 'Menu'}, type: 1},
 {buttonId: 'runtime', buttonText: {displayText: 'Runtime'}, type: 1}]
@@ -5652,7 +5652,7 @@ break
 					break   
 				case 'tekateki':
 		if (isGame(sender, isPremium, isCreator, isOwner, gcounttuser, glimit)) return sendButMessage(from, lang.limitg(prefix), `© ${ownername}`, [{buttonId: 'limit', buttonText: {displayText: `Check Limit`, },type: 1,}]);
-					if (tekateki.hasOwnProperty(sender.split('@')[0])) return reply("Masih ada permainan yang sedang berlangsung")
+					if (tekateki.hasOwnProperty(sender.split('@')[0])) return reply("Masih ada permainan yang sedang berlangsung❤🍭")
                     anu = await fetchJson(`${alphaapi}/game/tekateki?apikey=${alphakey}`)
                     jawaban = `${anu.data.jawaban}`
                     tekateki[sender.split('@')[0]] = jawaban.toLowerCase()
@@ -5689,7 +5689,7 @@ break
 					break  
 				case 'caklontong':
 				if (isGame(sender, isPremium, isCreator, isOwner, gcounttuser, glimit)) return sendButMessage(from, lang.limitg(prefix), `© ${ownername}`, [{buttonId: 'limit', buttonText: {displayText: `Check Limit`, },type: 1,}]);
-					if (caklontong.hasOwnProperty(sender.split('@')[0])) return reply("Masih ada permainan yang sedang berlangsung")
+					if (caklontong.hasOwnProperty(sender.split('@')[0])) return reply("Masih ada permainan yang sedang berlangsung❤🍭")
                     anu = await fetchJson(`${alphaapi}/game/caklontong?apikey=${alphakey}`)
                     tebakya = anu.result.data.soal
                     tebak = `Pertanyaan : ${tebakya}`
